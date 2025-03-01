@@ -2,13 +2,14 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import dropdown from "../assets/dropdown_icon.svg";
 import userImage from "../assets/upload_area.png";
+import logo from "../assets/logo1.jpg"
 
 function Navbar() {
   const [login, setLogin] = useState(true);
   const navigate=useNavigate()
   return (
     <div className="flex flex-col md:flex-row justify-between py-2 md:py-5 mb-5 items-center max-md:text-[11px] text-sm border-b border-b-[#ADADAD]">
-      <img onClick={()=>navigate("/")} src="" alt="Company_logo" className="w-40 cursor-pointer max-md:mb-2" />
+      <img onClick={()=>navigate("/")} src={logo} alt="Company_logo" className="w-40 cursor-pointer max-md:mb-2 rounded-full w-10" />
       <ul className="flex md:items-center flex gap-5  font-medium transition-all ease-in-out duration-500">
         <NavLink to={"/"}>
           <li className="hover:font-bold hover:text-secondary">Home</li>

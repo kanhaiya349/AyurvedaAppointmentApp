@@ -20,8 +20,8 @@ function Footer() {
             </div>
             <div className="lg:mr-20">
                 <p className="text-xl font-semibold mb-5 mt-10 md:mt-0">GET IN TOUCH</p>
-                <p onClick={()=>window.location.href="tel:+919508920251"} className="text-sm text-[#5C5C5C] font-semibold mb-2 cursor-pointer hover:text-secondary hover:underline decoration-secondary transition-all ease-in-out duration-500">Mobile Number</p>
-                <p onClick={()=>window.location.href="mailto:kanhaiyashuklagarg@gmail.com"} className="text-sm text-[#5C5C5C] font-semibold mb-2 cursor-pointer hover:text-secondary hover:underline decoration-secondary transition-all ease-in-out duration-500">Email</p>
+                <p onClick={()=>window.location.href="tel:+919117961659"} className="text-sm text-[#5C5C5C] font-semibold mb-2 cursor-pointer hover:text-secondary hover:underline decoration-secondary transition-all ease-in-out duration-500">+91-911-796-1659</p>
+                <p onClick={()=>window.location.href="mailto:ashoniayurveda5944@gmail.com"} className="text-sm text-[#5C5C5C] font-semibold mb-2 cursor-pointer hover:text-secondary hover:underline decoration-secondary transition-all ease-in-out duration-500">ashoniayurveda5944@gmail.com</p>
             </div>
         </div>
         <div className="flex justify-center items-center mb-5 text-sm text-[#5C5C5C] font-semibold">Copyright 2024 @ Company Name - All Right Reserved.</div>
