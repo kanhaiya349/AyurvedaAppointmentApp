@@ -11,8 +11,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Accomodation from './pages/Accomodation';
 import Terms from './pages/Terms';
-import Privacy from './pages/privacy';
 import Footer from './components/Footer';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   
@@ -30,7 +30,7 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
         <Route path='/accomodation' element={<Accomodation/>} />
-        <Route path='/privacy-policy' element={<Privacy/>} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
         <Route path='/terms' element={<Terms/>} />
       </Routes>
       <Footer/>
