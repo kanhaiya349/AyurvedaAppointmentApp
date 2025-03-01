@@ -48,7 +48,7 @@ function Navbar() {
               </div>
             </div>
           ) : (
-            <button onClick={()=>{navigate("/login")}} className="px-4 py-2 bg-primary rounded-full hover:bg-blue-700 hover:text-white transition-all ease-in-out duration-500 cursor-pointer">
+            <button onClick={()=>{navigate("/login")}} className="px-4 py-2 bg-secondary rounded-full hover:bg-red-900 text-white transition-all ease-in-out duration-500 cursor-pointer">
               Login
             </button>
           )}

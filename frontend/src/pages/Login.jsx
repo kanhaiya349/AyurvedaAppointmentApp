@@ -106,7 +106,7 @@ function Login() {
             required
           />
         </div>
-        <button className="w-full bg-primary text-white rounded-md py-2 cursor-pointer hover:bg-blue-800 transition-all ease-in-out duration-500 mb-5">
+        <button className="w-full bg-secondary text-white rounded-md py-2 cursor-pointer hover:bg-red-900 transition-all ease-in-out duration-500 mb-5">
           {state === "login" ? "Login" : "Sign Up"}
         </button>
         <div className="text-sm flex gap-2">
@@ -118,7 +118,7 @@ function Login() {
           <button
             type="submit"
             onClick={() => findTodo()}
-            className="text-primary underline hover:text-yellow-500 transition-all ease-in-out duration-400"
+            className="text-secondary underline hover:text-yellow-500 transition-all ease-in-out duration-400"
           >
             {state === "login" ? "Sign Up" : "login"}
           </button>
