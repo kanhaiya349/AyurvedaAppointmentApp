@@ -9,7 +9,13 @@ function Navbar() {
   const navigate=useNavigate()
   return (
     <div className="flex flex-col md:flex-row justify-between py-2 md:py-5 mb-5 items-center max-md:text-[11px] text-sm border-b border-b-[#ADADAD]">
-      <img onClick={()=>navigate("/")} src={logo} alt="Company_logo" className="w-40 cursor-pointer max-md:mb-2 rounded-full w-10" />
+      <div onClick={()=>navigate("/")} className="flex gap-2 group cursor-pointer">
+        <img src={logo} alt="Company_logo" className="w-10 max-md:mb-2 rounded-full w-10" />
+        <div className="">
+          <p className="font-semibold text-secondary underline group-hover:text-primary transition-all ease-in-out duration-200">ashoni</p>
+          <p className="font-semibold text-secondary underline group-hover:text-primary transition-all ease-in-out duration-200">ayurveda</p>
+        </div>
+      </div>
       <ul className="flex md:items-center flex gap-5  font-medium transition-all ease-in-out duration-500">
         <NavLink to={"/"}>
           <li className="hover:font-bold hover:text-secondary">Home</li>

@@ -1,23 +1,33 @@
-import React from 'react'
-import profileImage from "../assets/profileImage.jpg"
+import React from "react";
+import { doctors } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
 
 function DoctorDescription() {
+  const navigate=useNavigate()
+
   return (
     <div>
-      <h4 className='text-[25px] font-bold mb-10 text-secondary'>Doctor Description</h4>
-      <div className='flex flex-col md:flex-row md:gap-5 lg:gap-10'>
-        <img className='w-60 rounded-lg max-md:w-[60vw] mx-auto' src={profileImage} />
-        <div>
-          <p className='font-semibold text-xl my-4'>Mr. Ravi Ranjan</p>
-          <p className='font-semibold'>Panchkarma Technician (CARI Guwahati)</p>
-          <p className='text-lg font-semibold mt-4 mb-2'>About Myself</p>
-          <p className='text-sm text-textColor mb-2'>I am an Ayurveda enthusiast with a deep passion for holistic healing and natural therapies. I have successfully completed my *Panchakarma Technician Course* from *CCRAS*, equipping me with profound knowledge of detoxification and rejuvenation techniques.</p>
-          <p className='text-sm text-textColor mb-2'>Among various Ayurvedic treatments, my expertise and passion lie in *Leech Therapy (Jalaukavacharana)*—a powerful and time-tested method for blood purification and healing. I believe in harnessing the wisdom of Ayurveda to promote natural wellness.</p>
-          <p className='text-sm text-textColor mb-2'>Additionally, I specialize in *hair care solutions* tailored to different hair types, focusing on Ayurvedic herbs and therapies to nourish and restore hair health. My goal is to help people achieve wellness through traditional yet scientifically backed Ayurvedic practices.</p>
-        </div>
+      <h4 className="text-[25px] font-bold mb-10 text-secondary">
+        Doctors
+      </h4>
+      <div className="w-full grid grid-cols-auto gap-6">
+        {doctors.map((item, index) => (
+          <div className="flex flex-col border w-full rounded-lg border-secondary overflow-hidden" key={index}>
+            <img onClick={()=>{navigate(`/doctors/${item._id}`);scrollTo(0,0)}}
+              className="bg-[#EAEFFF] w-full cursor-pointer rounded-lg hover:scale-110 transition-all ease-in-out duration-500"
+              src={item.image}
+            />
+            <div className="px-1 py-4">
+              <p className="cursor-pointer font-semibold text-xl hover:text-secondary">
+                {item.name}
+              </p>
+              <p className="text-sm font-semibold mt-1">{item.speciality}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default DoctorDescription
+export default DoctorDescription;

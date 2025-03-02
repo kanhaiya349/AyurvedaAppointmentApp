@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom"
+import logo from "../assets/logo1.jpg"
 
 function Footer() {
     const navigate=useNavigate();
   return (
     <div className="flex flex-col mt-10">
         <div className="border-b mb-5 pb-6 border-grey-300 flex flex-col md:flex-row justify-between">
-            <div className="md:w-1/3">
-                <img onClick={()=>{navigate("/");scrollTo(0,0)}} src="" alt="Company_logo" className="w-40 mb-5 cursor-pointer" />
+            <div className="md:w-1/3 flex flex-col md:flex-row gap-2">
+                <img onClick={()=>{navigate("/");scrollTo(0,0)}} src={logo} alt="Company_logo" className="w-40 mb-5 cursor-pointer" />
                 <p className="text-sm text-[#5C5C5C] font-normal">About Company</p>
             </div>
             <div className="lg:ml-20">
@@ -24,7 +25,7 @@ function Footer() {
                 <p onClick={()=>window.location.href="mailto:ashoniayurveda5944@gmail.com"} className="text-sm text-[#5C5C5C] font-semibold mb-2 cursor-pointer hover:text-secondary hover:underline decoration-secondary transition-all ease-in-out duration-500">ashoniayurveda5944@gmail.com</p>
             </div>
         </div>
-        <div className="flex justify-center items-center mb-5 text-sm text-[#5C5C5C] font-semibold">Copyright 2024 @ Company Name - All Right Reserved.</div>
+        <div className="flex justify-center items-center mb-5 text-sm text-[#5C5C5C] font-semibold">Copyright 2025 @ ashoni ayurveda - All Right Reserved.</div>
     </div>
   )
 }

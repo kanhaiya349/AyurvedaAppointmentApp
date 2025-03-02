@@ -13,6 +13,8 @@ import Accomodation from './pages/Accomodation';
 import Terms from './pages/Terms';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Doctors from './pages/Doctors';
+import Jobs from './pages/Jobs';
 
 function App() {
   
@@ -32,6 +34,8 @@ function App() {
         <Route path='/accomodation' element={<Accomodation/>} />
         <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
         <Route path='/terms' element={<Terms/>} />
+        <Route path='/jobs' element={<Jobs/>} />
+        <Route path='/doctors/:docId' element={<Doctors/>} />
       </Routes>
       <Footer/>
     </div>
