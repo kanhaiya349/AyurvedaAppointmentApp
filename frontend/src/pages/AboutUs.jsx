@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about_image.png"
+import aboutImg from "../assets/aboutImg.png"
 
 function AboutUs() {
   return (
@@ -21,7 +21,7 @@ function AboutUs() {
           </div>
           <div className="group flex flex-col p-5 md:w-1/3 h-[200px] justify-center items-center border border-gray-300 cursor-pointer hover:bg-primary text-textColor hover:text-white transition-all ease-in-out duration-500">
             <h6 className=" font-semibold mb-8">CONVENIENCE:</h6>
-            <p className="text-sm">Access to a network of trusted healthcare professionals in your area.</p>
+            <p className="text-sm">Access to a network of trusted ayurvedic professionals in Patna.</p>
           </div>
           <div className="group flex flex-col p-5 md:w-1/3 h-[200px] justify-center items-center border border-gray-300 cursor-pointer hover:bg-primary text-textColor hover:text-white transition-all ease-in-out duration-500">
             <h6 className=" font-semibold mb-8">PERSONALIZATION:</h6>

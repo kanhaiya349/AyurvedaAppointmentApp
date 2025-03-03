@@ -6,7 +6,7 @@ function DoctorDescription() {
   const navigate=useNavigate()
 
   return (
-    <div>
+    <div id="doctors" className="mb-10">
       <h4 className="text-[25px] font-bold mb-10 text-secondary">
         Doctors
       </h4>

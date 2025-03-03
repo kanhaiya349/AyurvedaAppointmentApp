@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import contactImg from "../assets/contact_image.png"
+import contactImg from "../assets/contactusImg.png"
 
 function ContactUs() {
   return (

@@ -28,7 +28,7 @@ function Doctors() {
       <div className="flex flex-col md:flex-row gap-10 border border-secondary p-4 mb-8">
         <img
           src={docInfo.image}
-          className="w-[70%] md:w-[200px] max-md:mx-auto rounded-lg"
+          className="w-[70%] md:w-[200px] max-md:mx-auto rounded-lg bg-[#EAEFFF]"
           alt=""
         />
         <div>
@@ -47,11 +47,11 @@ function Doctors() {
         {otherDocs.map((item,index)=>(
             <div className="flex flex-col border w-60 rounded-lg border-secondary overflow-hidden" key={index}>
             <img onClick={()=>{navigate(`/doctors/${item._id}`);scrollTo(0,0)}}
-              className="w-60 cursor-pointer rounded-lg hover:scale-110 transition-all ease-in-out duration-500"
+              className="w-60 cursor-pointer rounded-lg hover:scale-110 transition-all ease-in-out duration-500 bg-[#EAEFFF]"
               src={item.image}
             />
             <div className="px-1 py-4">
-              <p className="cursor-pointer font-semibold text-xl hover:text-secondary">
+              <p className="cursor-pointer font-semibold text-xl hover:text-secondary" onClick={()=>{navigate(`/doctors/${item._id}`);scrollTo(0,0)}}>
                 {item.name}
               </p>
               <p className="text-[13px]">{item.shortDegree}</p>
